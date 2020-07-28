@@ -49888,8 +49888,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Daphn\PhpstormProjects\ict-flex\ictflex\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Daphn\PhpstormProjects\ict-flex\ictflex\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Daphn\Documents\GitHub\ictflex\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Daphn\Documents\GitHub\ictflex\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

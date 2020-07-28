@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Announcements;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $announcements = Announcements::all()->take(10);
+
+        return view('home')->with( compact('announcements'));
     }
 
     public function postAnnouncement(Request $request){

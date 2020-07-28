@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('/home/home');
-});
-
 Route::get('/over', function () {
     return view('/pages/about/about');
 });
@@ -33,17 +29,19 @@ Route::get('/mededelingen', function () {
     return view('/pages/announcements/announce');
 });
 
-Route::get('/home/mededelingen', function () {
-    return view('/panel/announcements');
-});
 
+Route::get('home/mededelingen', ['uses' => '\App\Http\Controllers\AnnounceController@index' ]);
 
+Route::get('/home/mededelingen/create', ['uses' => '\App\Http\Controllers\AnnounceController@create']);
 
-
-Route::get('/home/mededelingen/create','AnnounceController@create');
-
-Route::post('/home/mededelingen/storeAnnouncement','AnnounceController@storeAnnouncement');
+Route::post('/home/mededelingen/storeAnnouncement', ['uses' => '\App\Http\Controllers\AnnounceController@storeAnnouncement']);
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', ['uses' => '\App\Http\Controllers\FrontendController@index']);
+
+Route::get('/mededelingen', ['uses' => '\App\Http\Controllers\AnnounceFrontController@index']);
+
+

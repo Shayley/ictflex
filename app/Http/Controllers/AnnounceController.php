@@ -11,11 +11,7 @@ class AnnounceController extends Controller
 
         $announcements = Announcements::all();
 
-        return view('announcements.index',compact('announcements'));
-    }
-
-    public function create(){
-        return view('announcements.create');
+        return view('panel.announcements',compact('announcements'));
     }
 
     public function storeAnnouncement(){

@@ -11,7 +11,7 @@ class Announcements extends Model
 
     protected $fillable = ['title', 'content'];
 
-    protected $dates = ['created_at', 'updated_at', 'date'];
+    protected $dates = ['created_at', 'updated_at'];
 
     public function store(Request $request)
     {
