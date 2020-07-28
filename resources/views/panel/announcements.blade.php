@@ -10,7 +10,7 @@
 
     <div class="container">
 
-        <form method="POST" action="/storeAnnouncement">
+        <form method="POST" action="/home/mededelingen/storeAnnouncement">
 
             {{ csrf_field() }}
 
