@@ -1,0 +1,117 @@
+body, html {
+  font-family: 'Lato', sans-serif;
+  background-color: #e0dfe2 !important
+}
+
+.navbar-brand {
+  padding-right: 50px !important;
+  padding-left: 150px !important;
+}
+.nav-link {
+  color: #343469 !important;
+  padding: 10px !important;
+  margin: 10px !important;
+  font-size: 18px !important;
+  font-family: 'Lato', sans-serif !important;
+  padding-right: 20px !important;
+}
+
+.nav-link:hover {
+  color: #ff7716 !important;
+}
+
+.navbar-expand-lg {
+  border-bottom: 8px solid #ff7716;
+  background-color: white;}
+
+.hero {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.sidenav {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+  background: black;
+  opacity: 50%;
+  overflow-x: hidden;
+  margin-top: 50px;
+  left: 300px;
+  padding: 8px 0;
+}
+
+.titlefirst-sidebar {
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    color: #343469;
+    font-weight: bold;
+  }
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fba138;
+  text-decoration-line: none;
+}
+
+.content {
+  background-color: white;
+  margin-top: 50px;
+  width: 600px;
+  font-family: 'Lato', sans-serif;
+  color: #343469;
+
+}
+
+.title-ict {
+  h2 {
+    color: #343469 !important;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.footer-copyright {
+  font-family: 'Lato', sans-serif;
+  color: #343469;
+}
+
+.top {
+  margin-top: 150px;
+}
+
+.about-content {
+  background-color: white;
+  margin-top: 50px;
+  width: 600px;
+  font-family: 'Lato', sans-serif;
+  color: #343469;
+  padding-left: 10px;
+}
