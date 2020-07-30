@@ -34,7 +34,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        {{--@foreach($users as $user)--}}
 
+                            {{--@if($user->name == 'admin' ?? 'owner' ?? 'sitemanager')--}}
+                                {{--<li class="nav-item">--}}
+                                    {{--<a class="nav-link" href="/home/mededelingen">{{ __('Mededelingen') }}</a>--}}
+                                {{--</li>--}}
+                            {{--@endif--}}
+                        {{--@endforeach--}}
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -45,9 +52,6 @@
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="/home/mededelingen">{{ __('Mededelingen') }}</a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

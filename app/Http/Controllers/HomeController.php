@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Announcements;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,8 +26,9 @@ class HomeController extends Controller
     public function index()
     {
         $announcements = Announcements::all()->take(10);
+        $users = User::all();
 
-        return view('home')->with( compact('announcements'));
+        return view('home')->with( compact('announcements', 'users'));
     }
 
     public function postAnnouncement(Request $request){

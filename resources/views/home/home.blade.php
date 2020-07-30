@@ -33,43 +33,39 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-sm-6 d-flex justify-content-center">
                 <div class="title-ict">
-                    <h2>Welkom bij ICT-FLEX!</h2>
+                    <h1>Welkom bij ICT-FLEX</h1>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-6 d-flex justify-content-center">
                 <div class="titlefirst-sidebar">
                     <h4>Opleidingen</h4>
                 </div>
             </div>
         </div>
-    <div class="row">
-        <div class="col">
-            <div class="content">
-                <p>
-                    ICT-Flex is een team binnen het ICT Lyceum dat een onderdeel is van het Deltion College. Bij ICT – Flex volgen studenten dagonderwijs (BOL) of leren en werken (BBL), waarbij zelf plannen van je studieroute belangrijk is. Het Deltion College is een Regionaal Opleidingen Centrum (ROC) in Zwolle en verzorgt voor ruim 13.000 jongeren en volwassenen middelbaar beroepsonderwijs op mbo niveau.
-                </p>
-                <br>
-                <p>
-                    De ICT-opleidingen van Deltion zijn diverse malen uitgeroepen als de beste van Nederland volgens de Keuzegids Mbo. Sinds 2019 mogen wij ook het predicaat Topopleiding voeren voor ICT-Beheer en Applicatie- / Mediaontwikkelaar. In deze gids worden Mbo-instellingen per vakrichting vergeleken en is speciaal bedoeld voor (aankomende) studenten, die een opleiding moeten kiezen. Deltion scoort op alle opleidingen voldoende. Klik hier voor meer informatie.
-                </p>
-                <br>
-                <h4>Deltion/ICT-Flex in Coronatijd: Veilig op school, dat regelen we samen!</h4>
-                <br>
-                <p>
-                    Wat heerlijk! De vakantie is in zicht. Tijd om te genieten van de zon en de zomer na een aantal bewogen corona-maanden. Bij Deltion/ICT-Flex zijn we al weer volop bezig met de voorbereidingen voor het nieuwe schooljaar. We kijken er naar uit om je in augustus (weer) op onze campus te ontmoeten! Want dan vinden er weer lessen plaats op school. Kom je naar Deltion? In de animatie hieronder leggen we uit waar je rekening mee moet houden. Samen houden we Deltion veilig en gezond!
-                </p>
+        <div class="row">
+            @foreach( $announcements as $announcement )
+                <div class="col-sm-8">
+                    <div class="content">
+                        <div class="card bg-light mb-3">
+                            <div class="card-header"><h4>{{$announcement->title}}</h4></div>
+                            <div class="card-body">
+                                <p class="card-text">{{$announcement->content}}.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            @endforeach
+            <div class="col-sm-4">
+                <div class="sidenav">
+                    <a href="#">Medewerker ICT (N2)</a>
+                    <a href="#">Medewerker Beheer ICT (N3)</a>
+                    <a href="#">ICT Beheerder (N4)</a>
+                    <a href="#">Applicatie- en mediaontwikkeling (N4)</a>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="sidenav">
-                <a href="#">Medewerker ICT (N2)</a>
-                <a href="#">Medewerker Beheer ICT (N3)</a>
-                <a href="#">ICT Beheerder (N4)</a>
-                <a href="#">Applicatie- en mediaontwikkeling (N4)</a>
-            </div>
-        </div>
-    </div>
     </div>
 @endsection

@@ -48,8 +48,7 @@ body, html {
   background: black;
   opacity: 50%;
   overflow-x: hidden;
-  margin-top: 50px;
-  left: 300px;
+  top: -770px;
   padding: 8px 0;
 }
 
@@ -60,7 +59,6 @@ body, html {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 50px;
-    margin-left: 250px;
     color: #343469;
     font-weight: bold;
   }
@@ -80,19 +78,24 @@ body, html {
 }
 
 .content {
-  background-color: white;
   margin-top: 50px;
   width: 600px;
   font-family: 'Lato', sans-serif;
   color: #343469;
 
+  .card-header {
+
+    h4 {
+      color:  #ff7716;
+      font-weight: bolder;
+    }
+  }
 }
 
 .title-ict {
-  h2 {
+  h1 {
     color: #343469 !important;
     font-weight: bold;
-    text-align: center;
     margin-top: 50px;
     font-family: 'Lato', sans-serif;
   }
